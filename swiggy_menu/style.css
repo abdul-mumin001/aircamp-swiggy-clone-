@@ -1,0 +1,40 @@
+
+
+:root {
+    --font-family: arial,Helvetica Neue,sans-serif;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw; 
+    height: 100vh;
+}
+
+.wrapper__item > img {
+    width: 350px;
+    /* height: 300px; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+.wrapper__item > img:hover {
+    filter: drop-shadow(0 0 1rem rgb(16, 169, 26));
+}
+
+.wrapper__item--diffrent {
+    border: 1px solid rgb(20, 153, 220);
+    width : 350px;
+    height: 250px;
+    /* filter: drop-shadow(0 0 3rem rgb(20, 153, 220)); */
+    box-shadow: inset 0 -60px 20px rgba(20, 153, 220, 0.35);   
+    font-family: var(--font-family); 
+}
