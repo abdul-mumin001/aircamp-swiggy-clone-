@@ -1,5 +1,4 @@
 .alertBox {
-  /* border: 1px solid red; */
   padding: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -8,14 +7,12 @@
   flex-direction: row;
   justify-content: space-between;
   position: absolute;
-  /* border: .1px solid #fc7f1939; */
   border-radius: 5px;
   background-color: rgba(245, 245, 245, 0.733);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .alertBox:hover {
   background-color: rgba(245, 245, 245, 0.773);
-  /* border: .1px solid #fc7f1950; */
 }
 .alertMSG {
   margin: auto;
@@ -25,15 +22,11 @@
   color: black;
 }
 .alertBoxUpperDiv {
-  /* border: 1px solid blue; */
-  /* padding: 1px; */
-  /* align-items: center; */
   width: 341px;
   position: absolute;
   top: 5px;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* display: none; */
 }
 #alertBoxUpperDiv1 {
   display: none;

@@ -9,11 +9,9 @@
   opacity: 0.7;
   overflow: hidden;
   display: none;
-  /* display: block; */
 }
 #signupDiv,
 #loginDiv {
-  /* width: 550px; */
   padding-left: 40px;
   padding-right: 123px;
   padding-top: 30px;
@@ -26,7 +24,6 @@
   background: #fff;
   transition: transform 0.3s ease-out;
   z-index: 10001;
-  /* transform: translateZ(0); */
 }
 #closeBtnForSignup,
 #closeBtnForLogin {
@@ -80,6 +77,7 @@
   text-decoration: none;
   color: #fc8019;
 }
+
 /* form */
 
 #userSignupForm,
@@ -88,16 +86,13 @@
   flex-direction: column;
   gap: 21px;
   justify-content: center;
-  /* align-items: center; */
   width: 360px;
   margin: auto;
-  /* border: 1px solid red; */
   margin-top: -15px;
   margin-bottom: 35px;
   padding: 5px;
   padding-left: 0;
   padding-right: 10px;
-  /* font-size: 1.2rem; */
 }
 
 .form {
@@ -117,7 +112,6 @@
   color: #282c3f;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* padding: 1.25rem; */
   padding: 20px 22px 0px;
   background: none;
   font-size: 17px;
@@ -162,7 +156,6 @@
   color: #fff;
   font-weight: 600;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
-  /* margin-left: 3px; */
 }
 .submitBtn:hover {
   cursor: pointer;
@@ -172,7 +165,6 @@
   font-weight: 500;
   margin-top: 6px;
   color: #686b78;
-  /* margin-left: 3px; */
 }
 #make2InputInSingleRow {
   display: flex;
@@ -181,11 +173,9 @@
 }
 #validCard {
   width: 170px;
-  /* margin-left: -80px; */
 }
 #cvvCard {
   width: 105px;
-  /* margin-left: -55px; */
   margin-right: 40px;
 }
 #goToLoginBox,

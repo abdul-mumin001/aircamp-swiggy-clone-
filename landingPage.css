@@ -1,36 +1,28 @@
 body {
   margin: 0;
   font-family: ProximaNova, arial, Helvetica Neue, sans-serif;
-  /* width: 1445px; */
   min-width: 1400px;
   overflow: scroll;
-  /* position: relative; */
-  /* overflow-y: scroll; */
-  /* overflow: hidden; */
 }
 #upperSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   background-color: white;
-  /* border: 1px solid red; */
-  /* height: 540px; */
 }
 #upperSectionRightPartImage {
   width: 650px;
-  /* height: 540px; */
   height: 100%;
-  /* margin: auto; */
 }
+
 #upperSectionRightPart {
-  /* border: 1px solid blue; */
   text-align: right;
   height: 540px;
 }
+
 #upperSectionLeftPartInnerBox {
   margin: 50px;
   margin-right: 0;
   margin-top: 60px;
-  /* border: 1px solid red; */
   padding-left: 75px;
 }
 #swiggyLogo {
@@ -45,18 +37,15 @@ nav {
   display: none;
 }
 #navButtonDiv {
-  /* border: 1px solid red; */
   margin: auto;
   margin-right: 0;
   display: flex;
-  /* width: 200px; */
 }
 #loggedUpperDiv {
   margin: auto;
   margin-right: 0;
   display: none;
   position: relative;
-  /* border: 1px solid red; */
 }
 #loggedUser {
   border: 0.1px solid rgba(128, 128, 128, 0.204);
@@ -64,18 +53,12 @@ nav {
   padding-left: 5px;
   display: flex;
   flex-direction: row;
-  /* height: 45px; */
   margin: auto;
-  /* margin-right: 0; */
-  /* align-items: center; */
-  /* display: none; */
 }
 
 #loggedUser > div {
   margin: auto;
-  /* border: 1px solid red; */
   text-align: center;
-  /* text-align: center; */
   align-items: center;
 }
 #loggedUser > div > button {
@@ -87,19 +70,15 @@ nav {
   background-color: inherit;
   display: inline;
   text-align: center;
-  /* border: 1px solid red; */
 }
 #loggedUser > div > button:hover,
 #loggedUser > div:hover {
   cursor: pointer;
-  /* color: #FC8019; */
 }
 #loggedUser > div > img {
   width: 20px;
   height: 20px;
   margin-top: 4px;
-  /* border-radius: 100px; */
-  /* border: 1px solid blue; */
 }
 .navBtn {
   width: 100px;
@@ -123,14 +102,11 @@ nav {
 #randomTextHeading {
   font-size: 40px;
   font-weight: 600;
-  /* padding-top: 100px; */
   margin-top: 80px;
-  /* border: 1px solid red; */
   color: #282c3f;
   margin-bottom: 1%;
   transform: 1s;
 
-  /* -webkit-font-smoothing : antialiased; */
 }
 #supporterTextHeading {
   color: #686b78;
@@ -143,7 +119,6 @@ nav {
   width: 608px;
   margin-top: 40px;
   height: 58px;
-  /* border: 1px solid red; */
 }
 #searchBar {
   font-size: 18px !important;
@@ -155,7 +130,6 @@ nav {
   caret-color: #fc8019;
   padding-left: 15px;
   font-family: arial, Helvetica Neue, sans-serif;
-  /* caret-color: #FC8019; */
 }
 #searchBar:focus {
   border: 1px solid #fc8019;
@@ -209,7 +183,6 @@ nav {
   background-color: #2b1e16;
 }
 #secondBoxInnerDiv {
-  /* border: 1px solid blue; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: auto;
@@ -217,7 +190,6 @@ nav {
 .secondBoxInnerDivGridBox {
   width: 260px;
   height: 323px;
-  /* border: 1px solid white; */
   margin: auto;
   text-align: center;
   color: #fff;
@@ -249,17 +221,12 @@ nav {
   height: 570px;
   border: 1px solid rgba(245, 245, 245, 0);
   position: relative;
-  /* align-items: center; */
 }
 #thirdBoxInnerDiv {
   display: flex;
   flex-direction: column;
   margin: 155px 125px;
-  /* margin: auto; */
-  /* margin-top: 0; */
-  /* margin-bottom: 0; */
-  /* justify-content: center; */
-  /* position: relative; */
+  
 }
 #thirdBoxInnerDivHeading {
   font-size: 40px;
@@ -275,7 +242,6 @@ nav {
   padding-bottom: 60px;
   color: #7e808c;
   display: block;
-  /* margin: auto; */
 }
 #mobileImage1 {
   top: 0;
@@ -286,23 +252,16 @@ nav {
   position: absolute;
   bottom: 0;
   right: 80px;
-  /* right: 70px; */
-  /* left: 10px; */
-  /* top: 10; */
-  /* bottom: -315px; */
 }
 
 #logoutDropDown {
   text-align: center;
   padding: 5px;
-  /* border: 1px solid red; */
   position: absolute;
   margin: auto;
   width: 94%;
   right: -1px;
   border-top: 1.5px solid #fc8019;
-  /* margin-top: 5px; */
-
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 5px;
@@ -313,7 +272,7 @@ nav {
   cursor: pointer;
   border: 0.1px solid rgba(128, 128, 128, 0.151);
   border-radius: 10px;
-  /* border: 1px solid red; */
+  
 }
 #logoutDropDown > button {
   font-size: 15px;
@@ -325,5 +284,5 @@ nav {
   background-color: inherit;
   border: 0.1px solid rgba(128, 128, 128, 0.075);
   border-radius: 10px;
-  /* border: 1px solid red;  */
+  
 }
