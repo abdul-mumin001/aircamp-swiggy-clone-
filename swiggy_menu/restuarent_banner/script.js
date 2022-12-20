@@ -1,6 +1,6 @@
 const restaurant = {
     imgSrc: "../images/pexels-ella-olsson-1640772.jpg",
-    name: "AirCampus Sweets & Restaurant",
+    name: "Shree Krishna Sweets & Restaurant",
     varaities: "Sweets, North Indian, Chinese, South Indian, Italian, Pizzas",
     estTime: "30 MINS",
     price: "250 FOR TWO",
