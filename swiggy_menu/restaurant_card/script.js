@@ -115,9 +115,9 @@ for(let i=0; i<1; i++) makeRestaurantCard(parent, restaurant);
 const quick_hover = document.querySelector(".restaurant__wrapper");
 
 quick_hover.addEventListener("mouseenter", ()=> {   
-    document.querySelector(".restaurant__wrapper .quick__view").style.opacity = 1;
+    document.querySelector(".restaurant__wrapper .quick__view").classList.add("mouseIn");
 });
 
 quick_hover.addEventListener("mouseleave", ()=> {   
-    document.querySelector(".restaurant__wrapper .quick__view").style.opacity = 0;
+    document.querySelector(".restaurant__wrapper .quick__view").classList.remove("mouseIn");
 });

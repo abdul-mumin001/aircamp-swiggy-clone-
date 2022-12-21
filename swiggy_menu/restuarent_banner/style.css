@@ -74,11 +74,11 @@ html, body {
 .restaurent__filters {
     display: flex;
     justify-content: space-between;
-    border : 2px solid lightsalmon;
+    /* border : 2px solid lightsalmon; */
     align-items: center;
     width: 100vw;
-    margin: 10px 150px;
-    padding: 10px 0;
+    /* margin: 10px 150px; */
+    padding: 20px 20px 20px 80px;
 }
 
 .restaurent__filters--count {
@@ -106,6 +106,14 @@ html, body {
     cursor: pointer;
 }
 
+.restaurent__filters--list-item:hover > .list-item--feature {
+    visibility: visible;
+}
+
+.filter__popup__content--item {
+   cursor: pointer;
+}
+
 .restaurent__filters--list-item p {
     color: #686B78;
 }
@@ -120,6 +128,7 @@ html, body {
     height: 2px;
     background-color: #282C3F;
     align-self: stretch;
+    visibility: hidden;
 }
 
 .restaurent__filters--menu {
@@ -178,6 +187,10 @@ html, body {
 }
 /* Mobile filter */
 
+.mobile__filter__popup.open {
+    display: none;
+}
+
 .mobile-restuarent__filter {
     display: flex;
     justify-content: space-between;
@@ -216,6 +229,7 @@ html, body {
     align-items: center;
 
     padding: 5px 16px;
+    cursor: pointer;
 
 }
 

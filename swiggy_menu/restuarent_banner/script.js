@@ -1,3 +1,31 @@
+
+const mobilepopUp = document.querySelector(".mobile-restuarent__filter--button");
+mobilepopUp.addEventListener("click", () => {
+    const mobilePopup = document.querySelector(".mobile__filter__popup");
+    mobilePopup.classList.remove("open");
+});
+
+const cross = document.querySelector(".mobile__filter__popup--header > svg");
+// console.log(cross);
+cross.addEventListener("click", () => {
+    const mobilePopup = document.querySelector(".mobile__filter__popup");
+    mobilePopup.classList.add("open");
+
+});
+
+const changeTextContent = event => {
+
+    span.textContent = "radio_button_checked";
+    console.log("Helloo");
+}
+
+const radioSort = document.querySelectorAll(".filter__popup__content--item");
+
+radioSort.forEach(element => {
+    element.addEventListener("click", changeTextContent);
+});
+
+
 const restaurant = {
     imgSrc: "../images/pexels-ella-olsson-1640772.jpg",
     name: "Shree Krishna Sweets & Restaurant",
