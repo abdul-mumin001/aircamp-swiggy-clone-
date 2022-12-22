@@ -192,3 +192,27 @@
 
 
 
+@media only screen and (max-width:800px) {
+    #paymentOffers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 800;
+        }
+    #paymentOffers > div{
+        height: 200px;
+        padding: 30px;
+        
+    }
+  }
+  @media only screen and (max-width:500px) {
+    #paymentOffers{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 500;
+        }
+    #paymentOffers > div{
+        height: 200px;
+        padding: 30px;
+        
+    }
+  }
