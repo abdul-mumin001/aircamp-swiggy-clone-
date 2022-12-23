@@ -1,3 +1,6 @@
+import { footerHTML } from '../scriptInside-landingPage/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
+
 let restaurantButton = document.getElementById("restaurantButton");
 restaurantButton.addEventListener("click", function() {
     restaurantButton.style.borderBottom = "2px solid black"
@@ -5,6 +8,7 @@ restaurantButton.addEventListener("click", function() {
     dishesButton.style.color = "grey"
     restaurantButton.style.color = "black"
     couponsContainer.style.display = "none"
+    SeccouponsContainer.style.display="none"
 })
 
 let dishesButton = document.getElementById("dishesButton");
@@ -14,9 +18,9 @@ dishesButton.addEventListener("click", function() {
     dishesButton.style.color = "black"
     restaurantButton.style.color = "grey"
     couponsContainer.style.display = "block"
+    SeccouponsContainer.style.display="block"
 })
 
-//
 
 // console.log(alltpyesOfRestaurentOffers);
 // console.log(couponsContainer)
