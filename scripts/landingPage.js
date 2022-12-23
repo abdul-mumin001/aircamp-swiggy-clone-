@@ -19,6 +19,9 @@ setInterval(() => {
 
 showProfileSection();
 
+import { footerHTML } from '../scriptInside-landingPage/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
+
 import {
   overlayHTML,
   signUpHtml,
@@ -118,12 +121,13 @@ document.querySelector("#logoutBtn").addEventListener("click", () => {
 });
 
 document.getElementById("searchBtn").addEventListener("click", () => {
-  window.location.href = "";
+  window.location.href = "./PaymentOffersCoupons.html";
 });
 
 document.getElementById("goToLoginBox").addEventListener("click", () => {
   // initialPosition();
   showLoginBox();
 });
+
 
 

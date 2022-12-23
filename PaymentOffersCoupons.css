@@ -57,17 +57,12 @@
 
     
 }
-/* #restaurantButton:hover{
-  color:  black;
-  cursor: pointer;
-} */
+
 #dishesButton:hover{
     cursor: pointer;
     /* font-size: 20px; */
 }
-/* #filterRestaurant > div > #dishesButton{
-    border-bottom: 2px solid grey;
-} */
+
 
 #allOffers{
     margin-left: 150px;
@@ -133,7 +128,7 @@
     /* border: 2px solid red; */
 }
 #paymentOffers > div{
-    border: 2px solid #daceb7;
+    border: 1px solid #daceb7;
     height: 200px;
     padding: 30px;
     
@@ -182,7 +177,7 @@
     border-top-right-radius: 50%;
     /* margin: auto; */
 }
-#couponsContainer{
+#couponsContainer,#SeccouponsContainer{
     display: none;
 }
 #BOIDCCouponCode{
@@ -214,5 +209,10 @@
         height: 200px;
         padding: 30px;
         
+    }
+    #paymentOffers > div{
+        border: none;
+        border-bottom: 1px solid #daceb7;
+          
     }
   }
