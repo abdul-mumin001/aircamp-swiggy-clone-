@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.main-div-search{
+    background-color: #fff;
+    min-height: 90vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+   
+
+}
+.main-div-search-inner{
+   margin: 10em 10em 10em 10em; 
+}
+input{
+    height: 2.5em;
+    width: 53em;
+    font-size: large;
+    padding-left: 1em;
+    border-color:1px  gray;
+}
+
+.input-div{
+    display: flex;
+    justify-content:baseline;
+    }
+.searchbtn{
+    position:absolute;
+    top: 11rem;
+    right: 14rem;
+    font-size: x-large;
+    color: gray;
+    
+  
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.search-div-images{
+   
+    display: flex;
+    
+    flex-wrap: wrap;
+}
+img{
+    height: 5em;
+    width: 5em;
+}
+.search-div-images-outer{
+    /* margin: -3em 4em 6em 4em; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.popular-cuisines{
+    padding: 3em 0em 1.5em 0em;
+    color: #3d4152;
+    font-weight: 1000;
+    font-size: x-large;
+}
+
+@media only screen and (max-width:468px){
+
+    .main-div-search{
+        background-color: #fff;
+        min-height: 90vh;
+        max-width: 100%;
+      display: flex;
+        flex-direction: column;
+    ;
+        
+       
+    
+    }
+    .main-div-search-inner{
+       margin: 10em 10em 10em 10em; 
+    }
+    input{
+        height: 2.5em;
+        width: 53em;
+        font-size: large;
+        padding-left: 1em;
+        border-color:1px  gray;
+    }
+    
+    .input-div{
+        display: flex;
+        justify-content:baseline;
+        }
+    .searchbtn{
+        position:absolute;
+        top: 11rem;
+        right: 14rem;
+        font-size: x-large;
+        color: gray;
+        
+      
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+    .search-div-images{
+       
+        display: flex;
+        
+        flex-wrap: wrap;
+    }
+    img{
+        height: 5em;
+        width: 5em;
+    }
+    .search-div-images-outer{
+        /* margin: -3em 4em 6em 4em; */
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+    .popular-cuisines{
+        padding: 3em 0em 1.5em 0em;
+        color: #3d4152;
+        font-weight: 1000;
+        font-size: x-large;
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,7 @@
 }
 .navbar{
 box-shadow: 0 1rem 4rem -2rem rgb(40 44 63 /15%);
-position: -webkit-sticky;
+position:sticky;
 top: 0;
 left: 0;
 right: 0;
@@ -16,7 +16,7 @@ padding: 0 2rem;
 }
 
 .navbar .nav{
-    max-width: 120em;
+    max-width: 120rem;
     min-width: 20rem;
     position: relative;
     /* margin: 0 auto; */
@@ -29,9 +29,9 @@ padding: 0 2rem;
     align-items: center;
 }
 .nav #left .logo{
-    display: block;
+    padding-top: 3em;
     height: 4rem;
-    margin-right: 1rem;
+    padding-left: 6em;
     /* transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1); */
 }
 
@@ -39,50 +39,20 @@ padding: 0 2rem;
     transform: scale(1.1);
 }
 
-.navbar .location-div{
-    display: flex;
-    position: relative;
-    align-items: center;
-    margin-left: 2rem;
+.navbar .account-div{
+    margin-left: 3em;
     height: 2rem;
     cursor: pointer;
-    margin-bottom: -1/16rem;
-    padding-right: 1rem;
     font-size: 1rem;
-}
-.location-div .home{
-    font-weight: 700;
+    font-weight: 550;
     color: #3d4152;
-    float: left;
-    padding-bottom: 1/8rem;
-    border-bottom: 2px solid #3d4152;
-}
-.location-div .home:hover{
-color: #fc8019;
-border-bottom: 2px solid #fc8019;
-}
-/* .navbar .location-div:hover{
-    color: #fc8019;
-} */
-
-.location-div .location{
-    display: block;
-    font-weight: 300;
-    padding-left: 1rem;
-    margin-left: 1/2rem;
-    color: #686b78;
-}
-.location-div #arrow{
-    position: absolute;
-    top: 50%;
-    right: -6%;
-    transform: translateY(-50%);
-    font-size: 1rem;
-    color:#fc8019 ;
-    font-weight: 700;
+    padding-top: 3em;
 }
 
-.location-div .right{
+
+
+
+.account-div .right{
     position: relative;
 }
 .right .items{
@@ -98,7 +68,6 @@ border-bottom: 2px solid #fc8019;
 }
 .items .nav-item{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding-left: 1.8rem;
     position: relative;
@@ -116,112 +85,108 @@ border-bottom: 2px solid #fc8019;
 .items .nav-item a span{
     margin: 1rem;
 }
+.nav-item #user-color{
+    color:#fc8019   
+}
+/* .nav-item user:hover{
+    display: none;  
+} */
 
-.nav-item a:hover{
+
+.nav-item .hovering:hover{
     color:#fc8019 ; 
 }
 .nav-item a:hover svg{
     fill:#fc8019 ; 
 }
 
-.mobile-list{
-    display: none;
-}
-.home i{
-    display: none;
-}
-#sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 30rem;
-    background:#fff;
-    z-index: 1;
-    overflow-x: hidden;
-    
-   
-   
-}
-.sidebar-input{
-    
-    border: none;
-    box-shadow: 1px 1px 5px 0px;
-    width: 80%;
-    /* margin: 7rem 7rem  0rem 4rem; */
-    margin-top: 2rem;
-    margin-left: 4rem;
-    padding: 0.1rem 1rem;
-    box-sizing: border-box;
-    border-radius: 0;
-    font-size: 1rem;
-    font-weight: 500;
-    height: 7%;
-}
-.sidebar-current-location{
-border: 1px solid gray;
-height: 8%;
-width: 63%;
-margin: 2rem 4rem;
-padding: 2rem 3rem 1rem 2rem;                   
-}
-#get-current{
-    font-weight: 500;
-    color: #000;
-} 
-#get-current:hover{
-    color:#fc8019
-}
-/* .sidebar-current-location:hover{
-    color:#fc8019
-} */
-#using-gps{
-    font-size: small;
-    padding-left: 1.2rem;
-    padding-top: 0.3rem;
-    color: gray;
-}
-.sidebar-address{
-    border: 1px solid gray;
-    height: 18%;
-    width: 63%;
-    margin: 2rem 4rem;
-    padding: 2rem 3rem 1rem 2rem; 
-    font-size: small;   
-}
-#sidebar-home{
-    font-weight: 510;
-    color: #000;
-    font-size: 10;
-}
-#sidebar-home:hover{
-    color:#fc8019;
-}
-#sidebar-below-address{
-    font-size: small;
-    padding-left: 1.2rem;
-    padding-top: 0.3rem;
-    color: gray;
-}
-#saved-address{
-    font-size: 100;
-    padding-left: 1.2rem;
-    margin-bottom: 10px;
-    color: gray;
-}
-#sidebar.active{
-    left: 0px;
-}
-#sidebar-close{
-    padding-top: 2rem ;
-    padding-left: 4rem;
-    font-size: xx-large;
+.right .mobile-list{
+    display:none;
 }
 
+/* ********************************************user-page-main-content-div **************************************/
+
+.user-page-main-content{
+    background: #003a55d0;
+    height: 90vh;
+    width:100%;
+    
+}
+
+
+.user-page-main-content-header{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+color:white;
+padding:5em;
+height: 1em;
+position: sticky;
+top: 50px;
+background: #003a55d0;
+}
+
+.user-details{
+    display: flex;
+    flex-wrap: wrap;
+}
+#user-name{
+    font-size:xx-large;
+    font-weight: 500;
+}
+.user-details #user-gmail{
+    padding-top: 3em;
+    margin-left: 1em;
+}
+#edit-btn{
+    color: white;
+    height: 4em;
+    width: 9em;
+    background-color:#003a55d0;
+    border-color: #fff;
+    font-weight: 550;
+}
+
+.user-page-inner-content{
+    background: #fff;
+    height: 100vh;
+    width:82em;  
+    /* margin: 1rem 1rem; */
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#user-sidebar{
+    background-color:#93959f;
+    height: 35rem;
+    width: 18rem;
+    margin: 4rem 4em 4em 4em;
+    padding-bottom: 6rem;
+    
+   
+ 
+    
+    }
+    #user-sidebar li{
+        list-style-type: none;
+    }
+    .user-page-sidebar-items li{
+    padding: 2rem 4rem;
+    display: block;
+    margin: 0.5rem;
+
+    }
+    .user-page-sidebar-items .sidebar-icons{
+        border: 1px solid #3d4152;
+        border-radius: 20px ;
+        background-color:#3d4152; 
+        height: 20px;   
+        width: 20px;
+        padding: 2%;
+    }
 
 /********************************** FOR MOBILE VIEW ****************************************/
 
-@media only screen and (max-width:468px){
+@media (max-width:768px){
 
 header{
     margin: 0rem;
@@ -246,32 +211,33 @@ header{
 .nav #left .logo{
     display: none;
 }
-#left .location-div{
+#left .account-div{
     display: block;
 }
-.home i{
+
+/* .myaccount i{
     display: inline;
     padding-right: 0.2rem;
     font-size: x-large;
     border-bottom: 1.5px solid #3d4152;
     /* padding-right: 1px; */
     margin-right: 0.5rem;
-}
+} */
 
 .location-dot{
     display:block;
 }
-.location-div .home{
+.account-div .myaccount{
     border-bottom: none;
 }
-.location-div #arrow{
+.account-div #arrow{
     display: none;
 }
 .nav #left{
     margin-top: -2rem;
     margin-left:-3rem;
 }
-.location-div .location{
+.account-div .location{
     margin-left: -1rem;
 }
 .navbar{
@@ -318,9 +284,6 @@ header{
     }
     .logo2{
         display: block;
-    }
-    #sidebar{
-        display: none;
     }
 }
 
