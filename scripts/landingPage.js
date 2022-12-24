@@ -86,23 +86,11 @@ userSignupForm.addEventListener("submit", (event) => {
 });
 
 function showProfileSection() {
-  let loggedUserData = JSON.parse(localStorage.getItem("userProfile")) || [];
-  // console.log(loggedUserData);
-  if (loggedUserData[0]) {
-    getSingleDataFromDataBase(loggedUserData[1])
-      .then((response) => {
-        document.querySelector("#navButtonUpperDiv").style.display = "none";
-        document.querySelector("#loggedUpperDiv").style.display = "block";
-        document.querySelector("#loggedUser>div>button").innerText =
-          response.userName;
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  } else {
+
+  
     document.querySelector("#loggedUpperDiv").style.display = "none";
     document.querySelector("#navButtonUpperDiv").style.display = "block";
-  }
+
 }
 
 document.querySelector("#loggedUpperDiv").addEventListener("mouseenter", () => {
@@ -130,4 +118,43 @@ document.getElementById("goToLoginBox").addEventListener("click", () => {
 });
 
 
+// responsive part
+
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slide = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slide.length; i++) {
+    slide[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slide.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slide[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+let randomTextHead = document.getElementById("randomText");
+let text = [
+  "Order from top & favourite restaurants",
+  "with a wide collection of cuisines",
+  "delivered quickly to your doorstep",
+];
+let ind = 1;
+randomTextHead.innerText = text[index];
+setInterval(() => {
+  if (ind == text.length) {
+    ind = 0;
+  }
+  randomTextHead.innerText = text[index];
+  ind++;
+}, 2000);
 
