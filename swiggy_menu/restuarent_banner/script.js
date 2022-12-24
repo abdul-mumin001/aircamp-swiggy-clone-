@@ -1,3 +1,32 @@
+
+const mobilepopUp = document.querySelector(".mobile-restuarent__filter--button");
+mobilepopUp.addEventListener("click", () => {
+    const mobilePopup = document.querySelector(".mobile__filter__popup");
+    mobilePopup.classList.remove("open");
+});
+
+const cross = document.querySelector(".mobile__filter__popup--header > svg");
+// console.log(cross);
+cross.addEventListener("click", () => {
+    const mobilePopup = document.querySelector(".mobile__filter__popup");
+    mobilePopup.classList.add("open");
+
+});
+
+const changeTextContent = event => {
+
+    span.textContent = "radio_button_checked";
+    console.log("Helloo");
+}
+
+const radioSort = document.querySelectorAll(".filter__popup__content--item");
+
+radioSort.forEach(element => {
+    element.addEventListener("click", changeTextContent);
+});
+
+// Restaurant card Main Page
+
 const restaurant = {
     imgSrc: "../images/pexels-ella-olsson-1640772.jpg",
     name: "Shree Krishna Sweets & Restaurant",
@@ -21,6 +50,16 @@ const makeRestaurantCard = (parent, restaurant) => {
     img_tag.alt = "Restaurent Img";
 
     restaurent__image.appendChild(img_tag);
+
+    // heading div for offer
+    const offer_div = document.createElement("div");
+    offer_div.className = "restaurent__offer--view";
+    const offer_div_head = document.createElement("h4");
+    offer_div_head.textContent = "50% OFF";
+    offer_div.appendChild(offer_div_head);
+    restaurent__image.appendChild(offer_div);
+
+
     restaurant__wrapper.appendChild(restaurent__image);
 
     // restaurent--name
@@ -34,9 +73,7 @@ const makeRestaurantCard = (parent, restaurant) => {
     para__menu.className = "restaurant__menu--items";
     para__menu.textContent = restaurant.varaities;
 
-    restaurant__name.appendChild(h3);
-    restaurant__name.appendChild(para__menu);
-    restaurant__wrapper.appendChild(restaurant__name);
+    // restaurant__wrapper.appendChild(restaurant__name);
 
     // restaurent--feature
 
@@ -68,7 +105,11 @@ const makeRestaurantCard = (parent, restaurant) => {
     para__offer.textContent = restaurant.price;
     restaurant__feature.appendChild(para__offer);
 
-    restaurant__wrapper.appendChild(restaurant__feature);
+    restaurant__name.appendChild(h3);
+    restaurant__name.appendChild(para__menu);
+    restaurant__name.appendChild(restaurant__feature);
+
+    restaurant__wrapper.appendChild(restaurant__name);
 
     // hr tag
     const hr = document.createElement("hr");
@@ -105,8 +146,6 @@ const makeRestaurantCard = (parent, restaurant) => {
     restaurant__wrapper.appendChild(quick__view);
 
     parent.appendChild(restaurant__wrapper);
-    console.log(" HEllo JI....");    
-
 }
 
 for(let i=0; i<30; i++) makeRestaurantCard(parent, restaurant);

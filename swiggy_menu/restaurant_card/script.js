@@ -21,6 +21,16 @@ const makeRestaurantCard = (parent, restaurant) => {
     img_tag.alt = "Restaurent Img";
 
     restaurent__image.appendChild(img_tag);
+
+    // heading div for offer
+    const offer_div = document.createElement("div");
+    offer_div.className = "restaurent__offer--view";
+    const offer_div_head = document.createElement("h4");
+    offer_div_head.textContent = "50% OFF";
+    offer_div.appendChild(offer_div_head);
+    restaurent__image.appendChild(offer_div);
+
+
     restaurant__wrapper.appendChild(restaurent__image);
 
     // restaurent--name
@@ -34,9 +44,7 @@ const makeRestaurantCard = (parent, restaurant) => {
     para__menu.className = "restaurant__menu--items";
     para__menu.textContent = restaurant.varaities;
 
-    restaurant__name.appendChild(h3);
-    restaurant__name.appendChild(para__menu);
-    restaurant__wrapper.appendChild(restaurant__name);
+    // restaurant__wrapper.appendChild(restaurant__name);
 
     // restaurent--feature
 
@@ -68,7 +76,11 @@ const makeRestaurantCard = (parent, restaurant) => {
     para__offer.textContent = restaurant.price;
     restaurant__feature.appendChild(para__offer);
 
-    restaurant__wrapper.appendChild(restaurant__feature);
+    restaurant__name.appendChild(h3);
+    restaurant__name.appendChild(para__menu);
+    restaurant__name.appendChild(restaurant__feature);
+
+    restaurant__wrapper.appendChild(restaurant__name);
 
     // hr tag
     const hr = document.createElement("hr");
@@ -108,16 +120,16 @@ const makeRestaurantCard = (parent, restaurant) => {
 
 }
 
-for(let i=0; i<1; i++) makeRestaurantCard(parent, restaurant);
+for(let i=0; i<30; i++) makeRestaurantCard(parent, restaurant);
 
 // hover effecg Quick view
 
 const quick_hover = document.querySelector(".restaurant__wrapper");
 
 quick_hover.addEventListener("mouseenter", ()=> {   
-    document.querySelector(".restaurant__wrapper .quick__view").style.opacity = 1;
+    document.querySelector(".restaurant__wrapper .quick__view").classList.add("mouseIn");
 });
 
 quick_hover.addEventListener("mouseleave", ()=> {   
-    document.querySelector(".restaurant__wrapper .quick__view").style.opacity = 0;
+    document.querySelector(".restaurant__wrapper .quick__view").classList.remove("mouseIn");
 });
