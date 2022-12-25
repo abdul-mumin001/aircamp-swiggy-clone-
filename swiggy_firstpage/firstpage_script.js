@@ -12,6 +12,11 @@ arrow_down.addEventListener("click", ()=>{
     console.log(open);
 })
 
+
+// import { footerHTML } from '../scriptInside-landingPage/footer.js'
+// document.getElementById('footerPart').innerHTML = footerHTML();
+
+
 // document.getElementsByClassName
 
 
@@ -182,3 +187,4 @@ const makeRestaurantCard = (parent, restaurant) => {
 for(let i=0; i<30; i++) makeRestaurantCard(parent, restaurant);
 
 // hover effecg Quick view
+
