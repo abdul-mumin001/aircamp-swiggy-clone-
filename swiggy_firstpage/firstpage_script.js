@@ -13,8 +13,8 @@ arrow_down.addEventListener("click", ()=>{
 })
 
 
-// import { footerHTML } from '../scriptInside-landingPage/footer.js'
-// document.getElementById('footerPart').innerHTML = footerHTML();
+import { footerHTML } from '../scriptInside-landingPage/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
 
 
 // document.getElementsByClassName
