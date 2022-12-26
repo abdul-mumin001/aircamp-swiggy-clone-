@@ -175,7 +175,13 @@ const makeRestaurantCard = (parent, restaurant) => {
 }
 
 // for(let i=0; i<30; i++) makeRestaurantCard(parent, restaurant);
-
 // Data Fetching for Restaurant 
 
-// hover effecg Quick view
+fetch("https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/swiggy-product")
+    .then(res => res.json())
+    .then(data => {
+        data.forEach(restaurant => {
+            makeRestaurantCard(parent, restaurant);
+        })
+    })
+    .catch(err => console.log(err))
