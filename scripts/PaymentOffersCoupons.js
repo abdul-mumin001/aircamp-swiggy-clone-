@@ -57,16 +57,6 @@ restaurant__Button.addEventListener("click", () => {
     restaurant__container.classList.remove("open");
 })
 
-const restaurant = {
-    imgSrc: "images/pexels-chan-walrus-958545.jpg",
-    name: "Shree Krishna Sweets & Restaurant",
-    varaities: "Sweets, North Indian, Chinese, South Indian, Italian, Pizzas",
-    estTime: "30 MINS",
-    price: "250 FOR TWO",
-    rating: 4.2,
-    offer: "50% off | Use WELCOME50",
-}
-
 const parent = document.querySelector(".restaurant__container");
 
 const makeRestaurantCard = (parent, restaurant) => {
@@ -127,12 +117,12 @@ const makeRestaurantCard = (parent, restaurant) => {
     restaurant__feature.appendChild(circle);
 
     const para__estTime = document.createElement("p");
-    para__estTime.textContent = restaurant.estTime;
+    para__estTime.textContent = restaurant.estTime + " "+ restaurant.estTimeString;
     restaurant__feature.appendChild(para__estTime);
     restaurant__feature.appendChild(circle);
 
     const para__offer = document.createElement("p");
-    para__offer.textContent = restaurant.price;
+    para__offer.textContent = restaurant.price +" "+ restaurant.priceString;
     restaurant__feature.appendChild(para__offer);
 
     restaurant__name.appendChild(h3);
@@ -151,7 +141,7 @@ const makeRestaurantCard = (parent, restaurant) => {
     restaurant__discount.className = "restaurant__discount";
 
     const img_discount = document.createElement("img");
-    img_discount.src = "images/discount-icon.png";
+    img_discount.src = "../images/discount-icon.png";
     img_discount.alt = "discount";
 
     const para__discount = document.createElement("p");
@@ -176,7 +166,16 @@ const makeRestaurantCard = (parent, restaurant) => {
     restaurant__wrapper.appendChild(quick__view);
 
     parent.appendChild(restaurant__wrapper);
+
 }
 
-for(let i=0; i<10; i++) makeRestaurantCard(parent, restaurant);
+// for(let i=0; i<30; i++) makeRestaurantCard(parent, restaurant);
 
+fetch("https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/swiggy-product")
+    .then(res => res.json())
+    .then(data => {
+        data.forEach(restaurant => {
+            makeRestaurantCard(parent, restaurant);
+        })
+    })
+    .catch(err => console.log(err))
