@@ -109,7 +109,7 @@ document.querySelector("#logoutBtn").addEventListener("click", () => {
 });
 
 document.getElementById("searchBtn").addEventListener("click", () => {
-  window.location.href = "./PaymentOffersCoupons.html";
+  window.location.href = "../swiggy_firstpage/firstpage.html";
 });
 
 document.getElementById("goToLoginBox").addEventListener("click", () => {

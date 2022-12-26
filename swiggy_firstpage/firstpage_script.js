@@ -12,6 +12,11 @@ arrow_down.addEventListener("click", ()=>{
     console.log(open);
 })
 
+
+import { footerHTML } from '../scriptInside-landingPage/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
+
+
 // document.getElementsByClassName
 
 
@@ -173,11 +178,4 @@ const makeRestaurantCard = (parent, restaurant) => {
 
 // Data Fetching for Restaurant 
 
-fetch("https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/swiggy-product")
-    .then(res => res.json())
-    .then(data => {
-        data.forEach(restaurant => {
-            makeRestaurantCard(parent, restaurant);
-        })
-    })
-    .catch(err => console.log(err))
+// hover effecg Quick view
