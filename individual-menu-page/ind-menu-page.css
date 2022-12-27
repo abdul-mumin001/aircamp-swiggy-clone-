@@ -164,4 +164,153 @@
     font-size: 0.9rem;
     /* font-weight: bolder; */
   }
-  
+
+  /* ******************************MErging ****************************************** */
+
+.menu__item__page {
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-rows: auto;
+}
+
+.menu__categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end; 
+    
+    padding: 5px 10px;
+}
+
+
+
+.menu__categories > p {
+    margin: 2px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    -webkit-user-drag: none; 
+}
+
+.menu__categories > p:hover {
+    color: orange;
+    
+}
+
+.menu__item--details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px 10px;
+    border-bottom: 1px solid gray;
+}
+
+.menu__item--details .menu__item--text {
+    padding-right: 20px;
+}
+
+.menu__item--details .menu__item--text>p:nth-child(1) {    
+    color: green;
+}
+
+.menu__item--details .menu__item--text>p:nth-child(2) {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.menu__item--details .menu__item--text>p:nth-child(3) {
+    font-size: 14px;
+}
+
+.menu__item--details .menu__item--text>p:last-child {
+    font-size: 10px;
+    color: grey;
+}
+
+.menu__item--details .menu__item--img {
+    align-self: center;
+}
+
+.menu__item--glance {
+    width: 120px;
+    border-radius: 5px;
+}
+
+.menu__item--glance img {
+    width: 100%;
+}
+
+.menu__item--img .add__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    position: relative;
+    bottom: 40px;
+    background-color: rgba(245,245,226,0.90);
+    padding: 0;
+}
+
+.menu__item--img .add__button >p:first-child {
+    font-size: 16px;
+    color: green;
+    padding: 10px 20px;
+}
+
+.menu__item--img .add__button >p:last-child {
+    align-self: flex-start;
+}
+
+/* *********************************Priya's Code ***************************************************************** */
+
+.main-card-container{
+    margin: 2%;
+    /* border: 2px solid black; */
+    width: 20%;
+}
+.icon-dishname-counting{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.total-rupes span{
+    /* border: 2px solid green; */
+    margin-left: 59%;
+}
+.CARD-TOP{
+    /* border: 2px sloid brown; */
+    margin-bottom: 8%;
+    
+
+}
+.card-counting{
+    border: 1px solid grey;
+    padding: 2%;
+    cursor: pointer;
+    
+}
+.total-rupes{
+    /* border:2px solid green; */
+    margin-bottom: 5%;
+}
+.card-button{
+/* border: 2px solid red; */
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7%;
+    
+}
+button{
+    
+    /* border: 2px solid red; */
+    background-color: green;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    /* font-weight: bolder; */
+}
+
