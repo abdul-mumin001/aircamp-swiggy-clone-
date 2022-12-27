@@ -144,10 +144,7 @@
       }
       .responsive-view {
     display:block;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        
       }
       .responsive-view img{
         width: 100vw;
@@ -160,10 +157,7 @@
       }
       .responsive-view {
         display:block;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        
       }
       .responsive-view img{
         width: 100vw;

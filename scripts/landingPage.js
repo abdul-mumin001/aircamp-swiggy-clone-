@@ -149,12 +149,11 @@ let text = [
   "delivered quickly to your doorstep",
 ];
 let ind = 1;
-randomTextHead.innerText = text[index];
+randomTextHead.innerText = text[ind];
 setInterval(() => {
   if (ind == text.length) {
     ind = 0;
   }
-  randomTextHead.innerText = text[index];
+  randomTextHead.innerText = text[ind];
   ind++;
 }, 2000);
-
