@@ -57,3 +57,8 @@ minus.addEventListener("click", () => {
 });
 
 // End of Priya part
+
+// Footer
+
+import { footerHTML } from '../scriptInside-landingPage/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
