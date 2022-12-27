@@ -1,35 +1,15 @@
-
-const arrow_down=document.querySelector('.location-div');
-console.log(arrow_down);
+const sidebar=document.getElementById('sidebar');
 const left=document.getElementById('left');
 
+function myfunction(){
+    sidebar.style.width="30rem";
+    // left.style.color="0rem";
+}
 
-arrow_down.addEventListener("click", ()=>{
-    const open = document.getElementById('sidebar');
-    
-    open.classList.toggle("sidebar__open");
-
-    console.log(open);
-})
-
-
-import { footerHTML } from '../scriptInside-landingPage/footer.js'
-document.getElementById('footerPart').innerHTML = footerHTML();
-
-
-// document.getElementsByClassName
-
-
-// function myfunction(){
-//     sidebar.style.width="30rem";
-//     left.style.color="0rem";
-// }
-
-// function closebtn(){
-//     sidebar.style.width="0rem";
-//     left.style.height="4rem";
-// }
-
+function closebtn(){
+    sidebar.style.width="0rem";
+    // left.style.height="4rem";
+}
 
 
 //  Bhupesh Script File's

@@ -43,10 +43,9 @@
                         <div class="location-div">
                             <span class="home"><i class="fa-solid fa-location-dot "></i>Home</span>
                             <span class="location">Benguluru,karnataka,India</span>
-                            <span id="arrow">
+                            <span id="arrow" onclick="myfunction();">
                                 <i class="fa-solid fa-angle-down"></i>
                             </span>
-                            
                         </div>
                     </div>
                     <div class="right">
@@ -54,7 +53,7 @@
                             <li>
 
                                 <div class="nav-item search">
-                                    <a href="">
+                                    <a href="../swiggyClone/search.html">
                                         <svg class="nav-item-svg" viewBox="5 -1 12 25" height="17" width="17"
                                             fill="#686b78">
                                             <path
@@ -94,7 +93,7 @@
                             </li>
                             <li>
                                 <div class="nav-item user">
-                                    <a href="">
+                                    <a href="../swiggyClone/account.html">
                                         <svg class="nav-item-svg" viewBox="6 0 12 24" height="19" width="18"
                                             fill="#686b78">
                                             <path
@@ -151,7 +150,7 @@
         </header>
        
         <div id="sidebar">
-            <div id="sidebar-close">&times;</div>
+            <div id="sidebar-close"  onclick="closebtn();">&times;</div>
             <input type="text"  class="sidebar-input" placeholder="Search for area,street name..">
             <div class="sidebar-current-location">
                 <i class="fa-sharp fa-solid fa-location-crosshairs"></i>
