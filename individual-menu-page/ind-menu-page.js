@@ -61,6 +61,6 @@ minus.addEventListener("click", () => {
 
 // End of Priya part
 
-// Footer
+
 
 

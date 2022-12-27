@@ -29,6 +29,7 @@ import {
   showLoginBox,
   showSignupBox,
   initialPosition,
+ 
 } from "../scriptInside-landingPage/signupLogin.js";
 
 document.getElementById("import1").innerHTML = overlayHTML();
@@ -61,28 +62,38 @@ document
   .querySelector("#alertBoxUpperDiv2>.alertBox>.closePopup")
   .addEventListener("click", closeAlertPopup2);
 
-let userSignupForm = document.querySelector("#userSignupForm");
-let userLoginForm = document.querySelector("#userLoginForm");
-
+// localStorage 
 userSignupForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  let userPhoneNumber = document.getElementById("userPhoneNumber").value;
-  let userName = document.getElementById("userName").value;
-  let userEmail = document.getElementById("userEmail").value;
-  let userPassword = document.getElementById("userPassword").value;
-  let userCart = [];
-  let userAddresses = [];
+  var userPhoneNo=document.getElementById("userPhoneNumber").value;
+  var userName=document.getElementById("userName").value;
+  var userEmail=document.getElementById("userEmail").value;
+  var userPass=document.getElementById("userPassword").value;
 
-  let userDetails = {
-    userName,
-    userEmail,
-    userPhoneNumber,
-    userPassword,
-    userCart,
-    userAddresses,
-  };
-  // console.log(userDetails);
+
+  localStorage.setItem("userId_1",userPhoneNo)
+  localStorage.setItem("userName_1",userName)
+  localStorage.setItem("userId_1",userEmail)
+  localStorage.setItem("pass_1",userPass)
+
+  document.querySelector(".submitBtn").addEventListener("click", showLoginBox);
   
+});
+
+// localStorage 
+userLoginForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  var userId=document.getElementById("enteredEmailOrPhoneNumber").value;
+  var pass=document.getElementById("enteredPassword").value;
+
+  var userId_1=localStorage.getItem("userId_1");
+  var pass_1=localStorage.getItem("pass_1");
+  if(userId==userId_1 && pass==pass_1){
+    window.location.href="./swiggy_firstpage/firstpage.html";
+  }else{
+    alert("user id and password is incorrect")
+  }
+
 });
 
 function showProfileSection() {
@@ -93,21 +104,6 @@ function showProfileSection() {
 
 }
 
-document.querySelector("#loggedUpperDiv").addEventListener("mouseenter", () => {
-  document.getElementById("logoutDropDown").style.display = "block";
-  document.getElementById("colorChange").style.color = "#FC8019";
-});
-
-document.querySelector("#loggedUpperDiv").addEventListener("mouseleave", () => {
-  document.getElementById("logoutDropDown").style.display = "none";
-  document.getElementById("colorChange").style.color = "#282c3f";
-});
-
-document.querySelector("#logoutBtn").addEventListener("click", () => {
-  localStorage.setItem("userProfile", JSON.stringify([false, -1]));
-  showProfileSection();
-});
-
 document.getElementById("searchBtn").addEventListener("click", () => {
   window.location.href = "./swiggy_firstpage/firstpage.html";
 });
@@ -117,6 +113,9 @@ document.getElementById("goToLoginBox").addEventListener("click", () => {
   showLoginBox();
 });
 
+document.getElementById("goToSignupBox").addEventListener("click",() => {
+  showSignupBox();
+});
 
 // responsive part
 
