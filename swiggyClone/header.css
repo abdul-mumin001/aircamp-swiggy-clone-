@@ -145,7 +145,7 @@ border-bottom: 2px solid #fc8019;
    
 }
 .sidebar-input{
-    
+        
     border: none;
     box-shadow: 1px 1px 5px 0px;
     width: 80%;
@@ -259,10 +259,7 @@ header{
 .right .items .user{
     display: none;
 }
-.right .items .offers{
-    /* margin-right: -18rem;
-    padding-left: 4.5rem; */
-}
+
 .nav #left .logo{
     display: none;
 }
