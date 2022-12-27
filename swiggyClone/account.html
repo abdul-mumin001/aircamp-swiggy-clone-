@@ -24,7 +24,7 @@
     <div class="main-container">
 
         <!-- Navbar section -->
-        <header class="navbar">
+        <header class="navbar" id="navbar">
             <div class="global-nav">
                 <div class="nav">
                     <div id="left">
@@ -154,7 +154,7 @@
 
         <main>
             <div class="user-page-main-content">
-                <div class="user-page-main-content-header">
+                <div class="user-page-main-content-header" id="user-page-main-content-header">
                     <div class="user-details">
                         <div>
                             <div id="user-name">Arti</div>
@@ -165,7 +165,8 @@
 
                     <button id="edit-btn">EDIT PROFILE</button>
                 </div>
-                <div class="user-page-inner-content">
+                <div class="user-page-inner-content" id="user-page-inner-content">
+                    <div class="user-sidebar-outer">
                     <div id="user-sidebar">
                         <ul class="user-page-sidebar-items">
                             <li><i class="fa regular fa-bag-shopping"></i>
@@ -184,13 +185,7 @@
                                 </svg>
                             <span>Swiggy One</span></li>
                             <li><i class="fa-sharp fa-solid fa-heart sidebar-icons"></i>Favourites</li>
-                            <li><i class="fa-sharp fa-solid fa-credit-card sidebar-icons"></i>Payments</li>
-                            <li><i class="fa-sharp fa-solid fa-location-pin sidebar-icons"></i>Addresses</li>
-                            <li><i class="fa-solid fa-gear sidebar-icons"></i>Settings</li>
-                        </ul>
-
-                    </div>
-                </div>
+                            <li><i class="fa-sharp fa-solid fa-credit-card sidebar-icons"></i>Payments</li> 
             </div>
         </main>
 
@@ -201,6 +196,6 @@
 
     </div>
     <script src="script.js"> </script>
+    <script src="account.js"></script>
 </body>
-
 </html>

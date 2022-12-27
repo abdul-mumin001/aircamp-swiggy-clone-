@@ -108,7 +108,7 @@ padding: 0 2rem;
 
 .user-page-main-content{
     background: #003a55d0;
-    height: 90vh;
+    height: 100%;
     width:100%;
     
 }
@@ -117,13 +117,12 @@ padding: 0 2rem;
 .user-page-main-content-header{
 display: flex;
 justify-content: space-between;
-flex-wrap: wrap;
 color:white;
-padding:5em;
-height: 1em;
-position: sticky;
-top: 50px;
-background: #003a55d0;
+padding:4em 2em 2em 8em;
+height: 3em;
+top: 0;
+width: 80rem;
+/* background: #003a55d0; */
 }
 
 .user-details{
@@ -150,21 +149,21 @@ background: #003a55d0;
 .user-page-inner-content{
     background: #fff;
     height: 100vh;
-    width:82em;  
-    /* margin: 1rem 1rem; */
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width:90em;  
+    margin: 1em 0em 0em 1.5em;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
 }
 #user-sidebar{
     background-color:#93959f;
-    height: 35rem;
-    width: 18rem;
-    margin: 4rem 4em 4em 4em;
-    padding-bottom: 6rem;
+    height: 39rem;
+    width: 20rem;
+    /* margin: 90% 4px 4px 88px; */
     
-   
- 
-    
+    }
+
+    .user-sidebar-outer{
+      padding: 3em 30em 1em 4em;  
     }
     #user-sidebar li{
         list-style-type: none;
