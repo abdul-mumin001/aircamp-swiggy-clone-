@@ -1,3 +1,6 @@
+import { footerHTML } from '../scriptInside-landingPage/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
+
 const category = [
     "Recommended",
     "Vegetable Veg Pag Pizza",
@@ -60,5 +63,4 @@ minus.addEventListener("click", () => {
 
 // Footer
 
-import { footerHTML } from '../scriptInside-landingPage/footer.js'
-document.getElementById('footerPart').innerHTML = footerHTML();
+

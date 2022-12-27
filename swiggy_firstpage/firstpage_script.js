@@ -1,3 +1,6 @@
+import { footerHTML } from '../scriptInside-landingPage/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
+
 const sidebar=document.getElementById('sidebar');
 const left=document.getElementById('left');
 
