@@ -91,9 +91,8 @@ const makeRestaurantCard = (parent, restaurant) => {
     restaurant__feature.className = "restaurant__feature";
     const restaurant__rating = document.createElement("div");
     restaurant__rating.className = "restaurant__rating";
-    const span = document.createElement("span");
-    span.className = "material-symbols-sharp white";
-    span.textContent = "star";
+    const span = document.createElement("i");
+    span.className = "bx bxs-star";    // stat icon
 
     const para__rating = document.createElement("p");
     para__rating.textContent = "4.2";
@@ -102,17 +101,19 @@ const makeRestaurantCard = (parent, restaurant) => {
     restaurant__rating.appendChild(para__rating);
     restaurant__feature.appendChild(restaurant__rating);
 
-    let circle = document.createElement("div");
-    circle.className = "div__circle";
-    restaurant__feature.appendChild(circle);
+    let circle_one = document.createElement("div");
+    circle_one.className = "div__circle";
+    restaurant__feature.appendChild(circle_one);
 
     const para__estTime = document.createElement("p");
-    para__estTime.textContent = restaurant.estTime + " "+ restaurant.estTimeString;;
+    para__estTime.textContent = restaurant.estTime + " "+ restaurant.estTimeString;
     restaurant__feature.appendChild(para__estTime);
-    restaurant__feature.appendChild(circle);
+    let circle_two = document.createElement("div");
+    circle_two.className = "div__circle";
+    restaurant__feature.appendChild(circle_two);
 
     const para__offer = document.createElement("p");
-    para__offer.textContent = restaurant.price +" "+ restaurant.priceString;;
+    para__offer.textContent = restaurant.price +" "+ restaurant.priceString;
     restaurant__feature.appendChild(para__offer);
 
     restaurant__name.appendChild(h3);
@@ -130,9 +131,8 @@ const makeRestaurantCard = (parent, restaurant) => {
     const restaurant__discount = document.createElement("div");
     restaurant__discount.className = "restaurant__discount";
 
-    const img_discount = document.createElement("img");
-    img_discount.src = "images/discount-icon.png";
-    img_discount.alt = "discount";
+    const img_discount = document.createElement("i");
+    img_discount.className = "bx bxs-offer";
 
     const para__discount = document.createElement("p");
     para__discount.textContent = restaurant.offer;
@@ -156,10 +156,10 @@ const makeRestaurantCard = (parent, restaurant) => {
     restaurant__wrapper.appendChild(quick__view);
 
     parent.appendChild(restaurant__wrapper);
+
 }
 
 // for(let i=0; i<30; i++) makeRestaurantCard(parent, restaurant);
-// Data Fetching for Restaurant 
 
 fetch("https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/swiggy-product")
     .then(res => res.json())
