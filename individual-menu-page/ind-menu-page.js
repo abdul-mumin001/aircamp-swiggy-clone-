@@ -1,6 +1,24 @@
 import { footerHTML } from '../scriptInside-landingPage/footer.js'
 document.getElementById('footerPart').innerHTML = footerHTML();
 
+// header 
+const sidebar=document.getElementById('sidebar');
+const left=document.getElementById('left');
+
+
+
+
+function myfunction(){
+    sidebar.style.width="30rem";
+    // left.style.color="0rem";
+}
+
+function closebtn(){
+    sidebar.style.width="0rem";
+    // left.style.height="4rem";
+}
+// header end 
+
 const category = [
     "Recommended",
     "Vegetable Veg Pag Pizza",
