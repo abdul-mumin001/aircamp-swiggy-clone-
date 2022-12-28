@@ -34,12 +34,13 @@ function footerHTML() {
             </ul>
         </div>
         <div id="fourthBoxInnerBoxImages">
+        <a href="#">
+                <img id="appleStoreImage" height="54" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty">
+            </a>
             <a href="#">
                 <img id="playStoreImage" height="54" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp">
             </a>
-            <a href="#">
-                <img id="appleStoreImage" height="54" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty">
-            </a>
+            
         </div>
     </div>
     <hr id="horizontalLine1">
