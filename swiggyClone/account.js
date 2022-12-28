@@ -1,3 +1,7 @@
+import { footerHTML } from '../scriptInside-landingPage/footer.js'
+document.getElementById('footerPart').innerHTML = footerHTML();
+
+
 // let nav2 = document.getElementById("user-page-main-content-header");
 // let container = document.getElementById("user-page-inner-content");
 // let header1 =document.getElementById("navbar");

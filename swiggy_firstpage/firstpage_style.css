@@ -13,6 +13,7 @@
     height: 6rem;
     background: #FFF;
     padding: 0 2rem;
+    z-index: 99;
 }
 
 .navbar .nav {
@@ -518,6 +519,50 @@
     #sidebar {
         display: none;
     }
+}
+
+
+
+/* slider css  */
+
+#recommendationPosters {
+    padding: 0 20px;
+    background-color: #171a29;
+    position: relative;
+    margin: 0 auto;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider>div {
+    flex-shrink: 0;
+    margin-right: 50px;
+}
+
+.slider>div>img:hover {
+    transform: scale(1.05);
+}
+
+.slider>div>img {
+    width: 260px;
+    height: 260px;
+    transition: transform .5s cubic-bezier(.215, .61, .355, 1);
+    backface-visibility: visible;
+    transform: translateZ(0);
 }
 
 /************************** Bhupesh Main Content's Style part*************************************************************** */
