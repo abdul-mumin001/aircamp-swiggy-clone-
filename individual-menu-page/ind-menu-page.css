@@ -698,150 +698,206 @@
 
   /* ******************************MErging ****************************************** */
 
-.menu__item__page {
-    display:grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-auto-rows: auto;
-}
 
-.menu__categories {
+  .menu__item__page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+  
+  .menu__item__category {
+    width: 640px;
+    height: 80vh;
+    overflow-y: scroll;
+    /* padding: 30px 55px 100px; */
+  }
+  
+  .menu__categories {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-end; 
-    
-    padding: 5px 10px;
-}
-
-
-
-.menu__categories > p {
-    margin: 2px;
-    font-size: 14px;
-    letter-spacing: 1px;
+    align-items: flex-end;
+  
+    width: 254px;
+    padding: 30px 13px 0 0;
+  }
+  
+  .menu__categories > p {
+    font-size: 15px;
+    color: #283c3f;
+    margin: 0 -15px 0 0;
+    padding: 5px 20px 5px 0;
     cursor: pointer;
-    -webkit-user-drag: none; 
-}
-
-.menu__categories > p:hover {
-    color: orange;
-    
-}
-
-.menu__item--details {
+  
+    position: relative;
+  }
+  
+  .menu__categories .menu__categories--feature {
+    width: 4px;
+    height: 18px;
+    background-color: #fff;
+  
+    position: absolute;
+    top: 5px;
+    right: 0;
+  }
+  
+  .menu__categories > p:hover {
+    color: #fc8019;
+  }
+  
+  .menu__categories > p:hover .menu__categories--feature {
+    background-color: #fc8019;
+  }
+  
+  .menu__item--details {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    padding: 5px 10px;
-    border-bottom: 1px solid gray;
-}
-
-.menu__item--details .menu__item--text {
+  
+    width: 538px;
+    height: 155px;
+    padding: 0px 0px 35px;
+    border-bottom: 1px solid #282c3f73;
+  }
+  
+  .menu__item--details .menu__item--text {
+    width: 394px;
+    height: 112.51px;
     padding-right: 20px;
-}
-
-.menu__item--details .menu__item--text>p:nth-child(1) {    
+  }
+  
+  .menu__item--details .menu__item--text > p:nth-child(1) {
+    width: 14px;
+    height: 13.6px;
     color: green;
-}
-
-.menu__item--details .menu__item--text>p:nth-child(2) {
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.menu__item--details .menu__item--text>p:nth-child(3) {
+  }
+  
+  .menu__item--details .menu__item--text > h3 {
+    font-size: 17.08px;
+    color: #3e4152;
+    margin: 0px 4px 0px 0px;
+  }
+  
+  .menu__item--details .menu__item--text > p:nth-child(3) {
     font-size: 14px;
-}
-
-.menu__item--details .menu__item--text>p:last-child {
-    font-size: 10px;
-    color: grey;
-}
-
-.menu__item--details .menu__item--img {
-    align-self: center;
-}
-
-.menu__item--glance {
-    width: 120px;
-    border-radius: 5px;
-}
-
-.menu__item--glance img {
-    width: 100%;
-}
-
-.menu__item--img .add__button {
+    color: #3e4152;
+    margin: 4px 0px 0px;
+  }
+  
+  .menu__item--details .menu__item--text > p:last-child {
+    font-size: 14px;
+    color: #282c3f73;
+    margin: 14px 0px 0px;
+  }
+  
+  .menu__item--details .menu__item--img {
+    width: 118px;
+    height: 120px;
+    margin-left: 16px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu__item--details .menu__item--glance {
+    width: 118px;
+    height: 96px;
+  }
+  
+  .menu__item--glance img {
+    width: 118px;
+    height: 96px;
+    border-radius: 10px;
+  }
+  
+  .menu__item--img .add__button {
     display: flex;
     justify-content: center;
     align-items: center;
-
+  
     cursor: pointer;
     position: relative;
-    bottom: 40px;
-    background-color: rgba(245,245,226,0.90);
+    bottom: 20px;
+  
+    width: 94px;
+    height: 34px;
+    background-color: #fff;
+    border-radius: 5px;
     padding: 0;
-}
-
-.menu__item--img .add__button >p:first-child {
-    font-size: 16px;
-    color: green;
-    padding: 10px 20px;
-}
-
-.menu__item--img .add__button >p:last-child {
-    align-self: flex-start;
-}
-
-/* *********************************Priya's Code ***************************************************************** */
-
-.main-card-container{
-    margin: 2%;
-    /* border: 2px solid black; */
-    width: 100%;
-}
-.icon-dishname-counting{
+  }
+  
+  .menu__item--img .add__button > p:first-child {
+    font-size: 12.6px;
+    color: #60b246;
+  }
+  
+  /* *********************************Priya's Code ***************************************************************** */
+  
+  .main-card-container {
+    /* width: 278px; */
+    color: #282c3f;
+    margin:  9%;
+  }
+  .icon-dishname-counting {
     /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
-}
-.total-rupes span{
+  }
+  .total-rupes span {
     /* border: 2px solid green; */
     margin-left: 59%;
-}
-.CARD-TOP{
-    /* border: 2px sloid brown; */
-    margin-bottom: 8%;
-    
-
-}
-.card-counting{
-    border: 1px solid grey;
-    padding: 2%;
+  }
+  .CARD-TOP p {
+     margin-top: -7%;
+     margin-bottom: 15%;
+  }
+  .minus{
+      /* border: 1px solid red; */
+      margin-left: -15%;
+      font-weight: 1em;
+  }
+  .number{
+      margin-left: 20%;
+  }
+  .plus{
+      margin-left: 10%;
+  }
+  
+  
+  .card-counting {
+    border: 1px solid rgb(252, 243, 243);
+    padding: 3% 6%;
     cursor: pointer;
-    
-}
-.total-rupes{
+    width: 40px;
+  
+  }
+  .total-rupes p {
     /* border:2px solid green; */
-    margin-bottom: 5%;
-}
-.card-button{
-/* border: 2px solid red; */
-    background-color: green;
+    margin-top: -5%;
+    margin-bottom: 15%;
+    font-size: 0.8em;
+  }
+  .card-button {
+    /* border: 2px solid red; */
+    background-color: #60b246;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 7%;
-    
-}
-button{
-    
+    /* padding: 5%; */
+  }
+  button {
     /* border: 2px solid red; */
-    background-color: green;
+    background-color: #60b246;
     color: white;
     font-size: 1.5em;
     border: none;
+    margin: 3% 4%;
     /* font-weight: bolder; */
-}
-
+  }
+  .veg-icons i{
+      color: #60b246;
+  }
+  
