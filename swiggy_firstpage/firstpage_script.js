@@ -169,3 +169,11 @@ fetch("https://63a7491a59fd83b1bb42ba9a.mockapi.io/api/v1/swiggy-product")
         })
     })
     .catch(err => console.log(err))
+
+
+
+
+
+    document.querySelector(".restaurant__container").addEventListener("click", () => {
+        window.location.href = "../individual-menu-page/ind-menu-page.html";
+      });
