@@ -4,6 +4,7 @@ document.getElementById('footerPart').innerHTML = footerHTML();
 const sidebar=document.getElementById('sidebar');
 const left=document.getElementById('left');
 
+
 function myfunction(){
     sidebar.style.width="30rem";
     // left.style.color="0rem";
