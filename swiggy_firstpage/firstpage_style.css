@@ -868,10 +868,16 @@
     text-align: center;
 }
 
+@media screen and (max-width: 1050px){
+    .mobile-restuarent__filter {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1050px){
     .mobile__filter__popup.open{
         display: none;
-    }
+    }  
 }
 
 /* kjsjdkffioawejflsjdlfsfsddfsdfs */
@@ -899,7 +905,7 @@
 .restaurant__container {
     width: 100vw;
     margin: 10px 0 0;
-    padding: 39px 0 0;
+    padding: 100px 0;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
