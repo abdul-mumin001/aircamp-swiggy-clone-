@@ -59,9 +59,11 @@ function loginHTML() {
             <input class="submitBtn" type="submit" value="CONTINUE">
             <div class="termConditionLine">By clicking on Login, I accept the Terms & Conditions & Privacy Policy</div>
         </div>
+        
     </form>
 </div>`;
 }
+
 
 function showLoginBox() {
   let overlay = document.querySelector("#overlay");
@@ -93,6 +95,7 @@ function initialPosition() {
   });
   document.querySelector("#addressDiv").style.display = "none";
 }
+
 
 export {
   overlayHTML,

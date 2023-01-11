@@ -633,11 +633,13 @@
 
 
 /* payment offer css part */
+
 #availableCoupons{
     margin-left: 150px;
 }
 
 #paymentOffers{
+    padding-top: 2%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
@@ -647,17 +649,18 @@
     /* border: 2px solid red; */
 }
 #paymentOffers > div{
+    
     border: 1px solid #daceb7;
     height: 200px;
     padding: 30px;
     
 }
 #paymentOffers > div > p{
-    padding-top: 0%;
     /* margin-top: 9px; */
     font-size: .82rem;
 }
 #textCopyBotton{
+    margin-top: 5%;
     border: 2px solid #fc8019;
     padding: 0px 15px;
     background-color: white;
@@ -672,7 +675,7 @@
     width: 10rem;
     height: 25px;
     padding-left: .5rem; 
-    padding-right:1.5rem;
+    /* padding-right:1rem; */
     padding-top: .5rem;
 }
 #paymentOffers > div > div >span{
@@ -688,7 +691,7 @@
 
 #paymentOffers > div > div > img{
     /* border: 2px solid green; */
-    padding-right: 25px;
+    /* padding-right: 25px; */
     display: block;
     width: 20px;
     height: 18px;
@@ -703,7 +706,9 @@
     width: 50%;
     padding-right: 20px;
 }
-
+#paymentOffers h4,p{
+    padding-top: 5%;
+}
 
 
 @media only screen and (max-width:800px) {

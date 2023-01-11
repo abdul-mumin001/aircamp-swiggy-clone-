@@ -88,6 +88,7 @@ userLoginForm.addEventListener('submit', (event) => {
 
   var userId_1=localStorage.getItem("userId_1");
   var pass_1=localStorage.getItem("pass_1");
+  
   if(userId==userId_1 && pass==pass_1){
     window.location.href="./swiggy_firstpage/firstpage.html";
   }else{
@@ -95,6 +96,9 @@ userLoginForm.addEventListener('submit', (event) => {
   }
 
 });
+;
+
+
 
 function showProfileSection() {
 
@@ -105,6 +109,7 @@ function showProfileSection() {
 }
 
 document.getElementById("searchBtn").addEventListener("click", () => {
+
   window.location.href = "./swiggy_firstpage/firstpage.html";
 });
 
